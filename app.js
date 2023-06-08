@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://architsharma:archit%40c32@cluster0.pmjk5.mongodb.net/todolistDB",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://architsharma:archit2216@cluster0.apcb9v2.mongodb.net/todolistDB",{useNewUrlParser:true,useUnifiedTopology: true});
 mongoose.set('useFindAndModify', false);
 const itemsSchema=new mongoose.Schema({
   name:String
